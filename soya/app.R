@@ -137,6 +137,7 @@ server <- function(input, session,output) {
         mean <- c(y..,y..,y..,y..,y..,y..)
         ss <- data.frame(x,y,y_error,value,mean,tr_error)
         ss$x<-as.factor(ss$x)
+        ##Plot showing sum of squares
         ggplot(data=ss)+geom_point(aes(x = x, y = y, fill = x), shape=21,size=6)+
             facet_grid(cols=vars(x), scale="free_x")+
             scale_fill_manual(values = c("#00AFBB", "#E7B800", "#FC4E07"))+
