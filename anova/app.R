@@ -35,7 +35,7 @@ ui <- fluidPage(
             tabsetPanel(
                 tabPanel("Simulated dataframe",tableOutput("data"), htmlOutput("calculation")),
                 tabPanel("Interaction Plot",plotOutput("interactionplot")),
-                tabPanel("ANOVA",verbatimTextOutput("ANOVA"))
+                tabPanel("ANOVA result",verbatimTextOutput("ANOVA"))
             ))
     ))
 
