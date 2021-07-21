@@ -54,7 +54,7 @@ ui <- fluidPage(
             tabsetPanel(
             tabPanel("Scatterplot", plotOutput("scatterplot")),
             tabPanel("Total and Treatment mean",tableOutput("mean"),plotOutput("plotwithmean")),
-            tabPanel("ANOVA tabel",verbatimTextOutput("anovatable")),
+            tabPanel("ANOVA table",verbatimTextOutput("anovatable")),
             tabPanel("SSE and SS treatment", plotOutput("ssplot"),textOutput("explain"))
         ))
     ))
